@@ -1,4 +1,4 @@
-package ch13;
+package ch13Renshu;
 
 public class Hero {
 	private int hp;//hpフィールドをHeroクラスのみ
