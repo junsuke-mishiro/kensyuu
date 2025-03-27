@@ -1,9 +1,9 @@
 package ch14;
 
-public class Hero {
+public class Hero14_15 {
 	String name;
 	int hp;
-	static int money;//静的フィールド（Heroクラスで１つの財布）
+	static int money;
 
 	public boolean equals(Object o) {
 		if (this == o) {
@@ -20,5 +20,7 @@ public class Hero {
 
 	public static void setRandomMoney() {//staticをつけたメソッド
 		Hero.money = (int) (Math.random() * 1000);
+		System.out.printlln(this.name + "たちの所持金を初期化しました");/*静的メソッドの中では静的メンバしか利用できない／
+		インスタンスがない状況でも動くのだから、thisがどのインスタンスかわからないことから、明らか*/
 	}
 }
