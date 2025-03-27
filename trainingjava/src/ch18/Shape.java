@@ -6,19 +6,19 @@ package ch18;
  * 長さ測定機能
  */
 
-public abstract class Shape implements Figure{
-	
+public abstract class Shape implements Figure {
+
 	/**
 	 * 図形描画機能の定義
 	 */
-	
+
 	public abstract void draw();
-	
+
 	/**
 	 * 長さ測定機能の定義
 	 * @return 
 	 */
-	
+
 	public abstract double getPerimeter();
-	
+
 }

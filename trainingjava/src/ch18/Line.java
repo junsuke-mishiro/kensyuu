@@ -60,18 +60,7 @@ public class Line implements Figure {
 
 	@Override
 	public double getPerimeter() {
-		int x1;
-		int x2;
-		int y1;
-		int y2;
-
-		double xsub = x2 - x1;
-		double ysub = y2 - y1;
-
-		double length2 = Math.pow(xsub, 2) + Math.pow(ysub, 2);
-		double length = Math.sqrt(length2);
-
-		return length;
+		return Math.sqrt(Math.pow(p2.getX() - p1.getX(), 2) + (Math.pow(p2.getY() - p1.getY(), 2)));
 	}
 
 }

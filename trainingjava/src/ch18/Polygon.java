@@ -34,8 +34,7 @@ public abstract class Polygon extends Shape {
 	 */
 
 	public int getlnternalAngle() {
-		int a = (angle - 2) * 180;
-		return a;
+		return ((this.angle - 2) * 180);
 	}
 
 }

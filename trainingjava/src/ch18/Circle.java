@@ -37,7 +37,7 @@ public class Circle extends Shape {
 		this.center = new Point(x, y);
 		this.radius = r;
 	}
-	
+
 	/**
 	 * 以下のようなメッセージを表示する。
 	 * 出力例：
@@ -46,9 +46,15 @@ public class Circle extends Shape {
 
 	@Override
 	public void draw() {
-		System.out.println("［円を描画］中心点(" + center + ")から半径" + radius);
+		int x = 0;
+		x = this.center.getX();
+		//System.out.println(x);
+		int y = 0;
+		y = this.center.getY();
+		//System.out.println(y);
+		System.out.println("［円を描画］中心点(" + x + "," + y + ")から半径" + this.radius);
 	}
-	
+
 	/**
 	 * 半径を使い、以下の計算式で算出した結果を返す
 	 * 　　　　半径 * 2 * 円周率
@@ -58,7 +64,6 @@ public class Circle extends Shape {
 
 	@Override
 	public double getPerimeter() {
-		double sq = Math.pow(center, 2) * Math.PI;
-		return sq;
+		return radius * 2 * Math.PI;
 	}
 }

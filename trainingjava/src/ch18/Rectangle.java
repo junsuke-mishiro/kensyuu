@@ -35,15 +35,15 @@ public class Rectangle extends Polygon {
 	 * @param width
 	 * @param height
 	 */
-	
+
 	public Rectangle(int x, int y, int width, int height) {
 		p = new Point(x, y);
 		this.width = width;
 		this.height = height;
-		
+
 		super.angle = 4;
 	}
-	
+
 	/**
 	 * 以下のようなメッセージを表示する。
 	 * 出力例：
@@ -52,9 +52,9 @@ public class Rectangle extends Polygon {
 
 	@Override
 	public void draw() {
-		System.out.println("［長方形(矩形)を描画］点(" + p + ")を基準として幅" + width + "、高さ" + height + "の長方形");
+		System.out.println("［長方形(矩形)を描画］点(" + this.p + ")を基準として幅" + this.width + "、高さ" + height + "の長方形");
 	}
-	
+
 	/**
 	 * 横幅と縦幅を使い、以下の計算式で算出した結果を返す。
 	 * 　　　　( width + height ) * 2
@@ -62,8 +62,7 @@ public class Rectangle extends Polygon {
 
 	@Override
 	public double getPerimeter() {
-		double sq = (width + height) * 2;
-		return sq;
+		return (width + height) * 2;
 	}
 
 }
